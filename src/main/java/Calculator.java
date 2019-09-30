@@ -17,8 +17,25 @@ public class Calculator {
         return a * b;
     }
 
-    //TODO
-    //add methods for multiply, division, subtraction, square root, x^2
+    public int division(int a, int b) {
+
+        return a / b;
+    }
+
+    public int subtraction(int a, int b) {
+
+        return a - b;
+    }
+
+    public double sqroot(int a) {
+
+        return Math.sqrt(a);
+    }
+
+    public int pow2(int a) {
+
+        return a * a;
+    }
 
 }
 

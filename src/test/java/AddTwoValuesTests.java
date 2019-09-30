@@ -28,11 +28,68 @@ public class AddTwoValuesTests {
         assertEquals("-10 + -5 must be -15", -15, calc.add(-10, -5));
     }
 
-    //TODO
-    //add new tests for add() method
+    @Test
+    public void testMultiplyTwoPositiveValues() {
+        assertEquals("11 * 7 must be 77", 77, calc.multiply(11, 7));
+    }
 
-    //TODO
-    //add tests for new methods
+    @Test
+    public void testDivisionTwoPositiveValues() {
+        assertEquals("60 / 3 must be 20", 20, calc.division(60, 3));
+    }
+
+    @Test
+    public void testSubtractionTwoNegativeValues() {
+        assertEquals("18 - 17 must be 1", 1, calc.subtraction(18, 17));
+    }
+
+    @Test
+    public void testPow2TwoValues() {
+        assertEquals("5 * 5 must be 25", 25, calc.pow2(5));
+    }
+
+    @Test
+    public void testSqrt() {
+        assertEquals("144 sqrt 12", 12.0, calc.sqroot(144));
+    }
+
+    @Test
+    public void testDivisionZero() {
+        String msg = "";
+        {
+            try {
+                calc.division(-55, 0);
+            } catch (java.lang.ArithmeticException e) {
+                msg = e.getMessage();
+            }
+
+            assertEquals("not 0","/ by zero", msg);
+
+        }
+
+        //TODO
+        //add new tests for add() method
+
+        //TODO
+        //add tests for new methods
+
+
+    }
+
+    @Test
+    public void testSqrtMinus() {
+        String msg2 = "";
+        {
+            try {
+                calc.sqroot(-9);
+            } catch (testSqrtMinus e) {
+                msg2 = e.getMessage();
+            }
+
+            assertEquals("not 0", "/ by zero", msg);
+
+        }
+    }
 
     @After
     public void consolePrintAfter() {
