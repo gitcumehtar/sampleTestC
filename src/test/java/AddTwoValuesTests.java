@@ -76,20 +76,6 @@ public class AddTwoValuesTests {
 
     }
 
-    @Test
-    public void testSqrtMinus() {
-        String msg2 = "";
-        {
-            try {
-                calc.sqroot(-9);
-            } catch (testSqrtMinus e) {
-                msg2 = e.getMessage();
-            }
-
-            assertEquals("not 0", "/ by zero", msg);
-
-        }
-    }
 
     @After
     public void consolePrintAfter() {
