@@ -50,7 +50,7 @@ public class AddTwoValuesTests {
 
     @Test
     public void testSqrt() {
-        assertEquals("144 sqrt 12", 12.0, calc.sqroot(144));
+        assertEquals("144 sqrt 12", 10.0, calc.sqroot(144));
     }
 
     @Test
